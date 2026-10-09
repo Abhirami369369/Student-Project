@@ -1,2 +1,15 @@
 .env
 sample2/
+
+# === Python bytecode and cache ===
+__pycache__/*
+*.py[cod]
+*.pyc
+
+# === Django migration cache ===
+# Keep migration .py files, ignore cache/compiled files only
+*/migrations/__pycache__/
+ 
+# === Celery beat schedule ===
+celerybeat-schedule
+celerybeat.pid
