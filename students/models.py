@@ -64,7 +64,9 @@ class Course(models.Model):
     )
 
     def __str__(self):
-        return f"{self.name} - {self.duration}"
+        return self.name
+        # return f"{self.name} - {self.duration}"
+    
 
 
 # =========================================================

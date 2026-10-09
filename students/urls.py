@@ -19,6 +19,7 @@ urlpatterns = [
     path("students/<int:pk>/",s.StudentDetailView.as_view(),name="student-detail"),
 
     path("resend-otp/", s.ResendSuperAdminOTPView.as_view(), name="superadmin-resend-otp"),
+    # path("resend-otp/", s.ResendSuperAdminOTPView.as_view(), name="superadmin-resend-otp"),
     path('logout/', s.LogoutView.as_view(), name='logout'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
    
